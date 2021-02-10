@@ -22,21 +22,21 @@ NOTE: Steps 1 to 3 are scripted [here](https://github.com/WGU-CCDC/Blue-Team-Too
 ## Task 1.  Create Backup Admins 
 
     Step 1: 
-    ```
+
     adduser --disabled-password --gecos "" nightowl
-    ```
+
     Step 2: 
-    ```
+   
     usermod -aG sudo nightowl 
-    ```
+   
     Step 3: 
-    ```
+    
     adduser --disabled-password --gecos "" nightowl2
-    ```
+    
     Step 4: 
-    ```
+    
     usermod -aG sudo nightowl2
-    ```
+    
     Step 5: Notify team of usernames and passwords.
 
 
@@ -47,9 +47,9 @@ NOTE: Steps 1 to 3 are scripted [here](https://github.com/WGU-CCDC/Blue-Team-Too
 
 ## Task 2. Get a list of all users
     
-    ```
+    
     cat /etc/passwd | cut -d: -f1 > user_list.txt
-    ```
+    
 
 
 ## Task 3. Change the passwords for all users  
